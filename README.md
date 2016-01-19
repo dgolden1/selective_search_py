@@ -1,3 +1,7 @@
+# dgolden1 fork
+
+Modified to work with Python 2 and PyQt on Ubuntu 14.04
+
 # Overview
 
 This is a python implementation of the Selective Search [[1]](#selective_search_ijcv)[[2]](#selective_search_iccv).

@@ -11,8 +11,8 @@ import color_space
 import features
 import selective_search
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PyQt4.QtCore import *
+from PyQt4.QtGui import *
 
 #color_choises = ["RGB", "Lab", "rgI", "HSV", "nRGB", "Hue"]
 color_choises = ["RGB", "rgI", "HSV", "nRGB", "Hue"]
@@ -29,7 +29,7 @@ class Demo(QWidget):
     regions = list()
 
     def __init__(self, ndimg):
-        super().__init__()
+        super(Demo, self).__init__()
         self.ndimg = ndimg
         h, w = ndimg.shape[:2]
         self.qimg = QImage(ndimg.flatten(), w, h, QImage.Format_RGB888)
